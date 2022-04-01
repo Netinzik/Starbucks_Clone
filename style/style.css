@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', 'Poppins', sans-serif;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #a6a7a6;
+}
+::-webkit-scrollbar-thumb {
+  background: #005a35;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #017143;
+}
+
+
+@media (min-width:320px) { 
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    background-color: #017143;
+    position: relative;
+    padding: 10px 0;
+    border-radius: 0 0 15% 15%;
+    border-bottom: 1px solid aliceblue;
+  }
+  header div img{
+    max-width: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0px 5px 8px aliceblue);
+  }
+  header svg{
+    display: inline;
+    max-width: 40px;
+    filter: invert(1);
+  }
+  header nav{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    padding-top: 20%;
+    text-align: center;
+    background-color: #017143;
+  }
+  header nav ul{
+    list-style-type: none;
+  }
+  header nav ul li{
+    display: block;
+    padding: 0 10px;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 70px;
+    color: aliceblue;
+    border-bottom: 2px dashed aliceblue;
+  }
+  header nav ul li a{
+    text-decoration: none;
+    color: inherit;
+  }
+  section{
+    max-width: 100%;
+    margin: 10% 8%;
+    text-align: justify;
+  }
+  section div{
+    display: block;
+  }
+  section div h1{
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 2.1rem;
+    text-align: left;
+  }
+  section div h1 span{
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    color: #017143;
+  }
+  section div p{
+    line-height: 25px;
+  }
+  section button{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    border: 3px double #005a35;
+    padding: 5px;
+    background-color: #017143;
+    color: aliceblue;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  section button a{
+    text-decoration: none;
+    color: inherit;
+  }
+  section button > img{
+    max-width: 50px;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    transform: rotate(15deg);
+  }
+  footer{
+    display: inline-block;
+    width: 100%;
+    background-color: #017143;
+  }
+  footer div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 10px 0;
+  }
+  footer div a img{
+    filter: invert(1);
+  }
+}
+@media screen and (min-width:480px) { 
+  /* smartphones, Android phones, landscape iPhone */ 
+}
+@media screen and (min-width:600px) { 
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+}
+@media screen and (min-width:801px) { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+}
+@media screen and (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+}
+@media screen and (min-width:1281px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+}
+@media screen and (min-width:1600px) { 
+  /* Breakpoint personalizado */
+ }
