@@ -126,6 +126,9 @@
     width: 100%;
     background-color: #017143;
   }
+  footer div.imagens-laterais{
+    display: none;
+  }
   footer div{
     display: flex;
     justify-content: space-around;
@@ -139,19 +142,155 @@
 }
 @media screen and (min-width:480px) { 
   /* smartphones, Android phones, landscape iPhone */ 
+  section div h1{
+    font-size: 2.1rem;
+  }
+  section div h1 span{
+    font-size: 3rem;
+  }
+  section div p{
+    font-size: 1.3rem;
+    line-height: 35px;
+  }
 }
 @media screen and (min-width:600px) { 
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+  header svg{
+    display: none;
+  }
+  header nav{
+    position: static;
+    display: inline-block;
+    z-index: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+  }
+  header nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 0;
+    border-bottom: none;
+  }
 }
 @media screen and (min-width:801px) { 
   /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  header nav ul li{
+    font-size: 1.3rem;
+  }
+  header div img{
+    max-width: 100px;
+  }
+  section{
+    margin: 5% 8%;
+  }
+  section div h1{
+    text-align: end;
+    font-size: 3rem;
+  }
+  section div h1 span{
+    display: inline-block;
+  }
 }
 @media screen and (min-width:1025px) { 
   /* big landscape tablets, laptops, and desktops */ 
+  header{
+    border-radius: 0;
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+  header nav ul li{
+    font-size: 1.5rem;
+  }
+  section{
+    max-width: 50%;
+    margin: 5% 2%;
+  }
+  section div h1{
+    text-align: start;
+  }
+  footer{
+    position: absolute;
+    border-top: 3px double white;
+    width: 45%;
+    top: 125px;
+    right: 0;
+  }
+  footer div.imagens-laterais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.imagens-laterais img{
+    max-width: 200px;
+    display: block;
+  }
 }
 @media screen and (min-width:1281px) { 
   /* big landscape tablets, laptops, and desktops */ 
+  header{
+    justify-content: space-around;
+    padding: 10px 0;
+    border-radius: 0 0 15% 15%;
+  }
+  header div img{
+    max-width: 150px;
+  }
+  section{
+    max-width: 70%;
+    margin: 1%;
+    text-align: center;
+  }
+  section p{
+    text-align: justify;
+  }
+  section button{
+    width: 25%;
+    margin-top: 50px;
+  }
+  footer{
+    width: 100%;
+    position: static;
+    border-top: none;
+  }
+  footer div.imagens-laterais{
+    position: absolute;
+    top: 0;
+    right: 0;
+    top: 130px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer div.imagens-laterais img{
+    max-width: 150px;
+    position: relative;
+    top: 200px;
+  }
+  footer div.imagens-laterais img:nth-child(1){
+    transform: rotate(-15deg);
+    margin-right: 50px;
+    filter: drop-shadow(16px 16px 30px black);
+  }
+  footer div.imagens-laterais img:nth-child(2){
+    transform: rotate(35deg);
+    right: 50px;
+    filter: drop-shadow(16px 16px 30px black);
+  }
+  footer div.imagens-laterais img:nth-child(3){
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    max-width: 300px;
+    filter: drop-shadow(1px 1px 10px #ffd700);
+  }
+  footer div.links{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    background-color: #017143;
+  }
 }
-@media screen and (min-width:1600px) { 
-  /* Breakpoint personalizado */
- }
